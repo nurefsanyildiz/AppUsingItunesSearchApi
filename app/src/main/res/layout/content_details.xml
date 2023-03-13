@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/card_view_marginStartEnd"
+        android:layout_marginEnd="@dimen/card_view_marginStartEnd"
+        android:background="@android:color/white"
+        app:cardCornerRadius="@dimen/card_view_corner_radius"
+        app:cardElevation="@dimen/card_view_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/card_view_content_padding">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="@dimen/identification_image_size"
+                android:layout_height="@dimen/identification_image_size"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/identification_image_marginEnd"
+                android:contentDescription="@string/image_contentDescription"
+                tools:src="@drawable/ic_movie_filter_24dp" />
+
+            <TextView
+                android:id="@+id/tv_trackname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:text="Track Name" />
+
+            <TextView
+                android:id="@+id/tv_trackPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="#696969"
+                android:textSize="14dp"
+                tools:text="Track Price" />
+
+            <TextView
+                android:id="@+id/tv_primaryGenreName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="#696969"
+                android:textStyle="italic"
+                android:textSize="14dp"
+                tools:text="Genre" />
+
+            <TextView
+                android:id="@+id/tv_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#696969"
+                android:textSize="14dp"
+                tools:text="Artist" />
+
+            <TextView
+                android:id="@+id/tv_collection_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="#696969"
+                android:textSize="14dp"
+                tools:text="Collection Name" />
+
+            <TextView
+                android:id="@+id/tv_collection_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#696969"
+                android:textSize="14dp"
+                tools:text="Collection Price" />
+
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#696969"
+                android:textSize="14dp"
+                tools:text="Country" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textColor="#696969"
+                    android:textSize="12dp"
+                    tools:text="Description" />
+            </ScrollView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
